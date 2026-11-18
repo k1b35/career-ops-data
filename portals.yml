@@ -1,0 +1,149 @@
+# career-ops portals for Konstantin: product / data analyst and DS roles.
+# Put this file at: career-ops/portals.yml
+# Priority: 1) EU companies fully remote, 2) remote anywhere (Cyprus etc.),
+# 3) US companies remote for EU citizens, 4) EU with relocation, plus RU big-tech.
+
+scan_history:
+  recheck_after_days: 30
+
+preferred_languages: [en, ru]
+
+title_filter:
+  positive:
+    - "Product Analyst"
+    - "Product Analytics"
+    - "Data Analyst"
+    - "Analytics Engineer"
+    - "Data Scientist"
+    - "Product Data Scientist"
+    - "Product Scientist"
+    - "Decision Scientist"
+    - "Growth Analyst"
+    - "Business Analyst"
+    - "BI Analyst"
+    - "Experimentation"
+    - "AI Product Manager"
+    - "продуктовый аналитик"
+    - "аналитик данных"
+    - "аналитик"
+    - "Data Science"
+  negative:
+    - "word:Intern"
+    - "word:Interns"
+    - "Internship"
+    - "Trainee"
+    - "стажер"
+    - "стажёр"
+    - "Junior"
+    - "Jr."
+    - "Director"
+    - "Head of"
+    - "Werkstudent"
+    - "Praktikant"
+    - "Praktikum"
+    - "Sales"
+    - "Marketing Analyst"
+    - "Financial Analyst"
+    - "Security Analyst"
+    - "SOC Analyst"
+
+location_filter:
+  allow:
+    - "Remote"
+    - "Worldwide"
+    - "Anywhere"
+    - "Europe"
+    - "EMEA"
+    - "EU"
+    - "Estonia"
+    - "Tallinn"
+    - "Cyprus"
+    - "Limassol"
+    - "Dubai"
+    - "UAE"
+    # - "Russia"  # paused: RU market
+    # - "Россия"  # paused: RU market
+    # - "Москва"  # paused: RU market
+    # - "Санкт-Петербург"  # paused: RU market
+    # - "Удал"  # paused: RU market
+
+search_queries:
+  - name: hh.ru - product analyst remote
+    query: 'site:hh.ru "продуктовый аналитик" удалённо'
+    enabled: false  # paused: focus on foreign roles
+  - name: hh.ru - data analyst / DS remote
+    query: 'site:hh.ru ("аналитик данных" OR "Data Scientist") удалённо'
+    enabled: false  # paused: focus on foreign roles
+  - name: Habr Career - product analyst
+    query: 'site:career.habr.com "продуктовый аналитик" OR "Product Analyst" удаленно'
+    enabled: false  # paused: focus on foreign roles
+  - name: Greenhouse/Ashby/Lever - Product Analyst Europe
+    query: 'site:boards.greenhouse.io OR site:jobs.ashbyhq.com OR site:jobs.lever.co "Product Analyst" OR "Product Data Scientist" ("remote" AND ("Europe" OR "EMEA" OR "EU"))'
+    enabled: true
+  - name: Greenhouse/Ashby/Lever - Data Analyst Europe
+    query: 'site:boards.greenhouse.io OR site:jobs.ashbyhq.com OR site:jobs.lever.co "Data Analyst" OR "Analytics Engineer" ("remote" AND ("Europe" OR "EMEA" OR "EU"))'
+    enabled: true
+  - name: Workable - Product Analyst remote
+    query: 'site:apply.workable.com "Product Analyst" OR "Data Analyst" remote Europe'
+    enabled: true
+  - name: US remote open to EU - Product Analyst
+    query: 'site:boards.greenhouse.io OR site:jobs.ashbyhq.com "Product Analyst" OR "Product Data Scientist" remote ("Europe" OR "EU" OR "worldwide")'
+    enabled: true
+
+tracked_companies:
+  - name: Revolut
+    careers_url: https://www.revolut.com/careers
+    scan_method: websearch
+    scan_query: 'site:revolut.com/careers "Product Analyst" OR "Data Analyst" OR "Data Scientist"'
+    notes: "London / EU remote. Fintech super-app."
+    enabled: true
+
+  # Russian big-tech and banks. Off by default; turn on if you want RU roles in the scan.
+  # Scanned with web search on their own career domains (URLs not verified by me, check them).
+  - name: Yandex
+    careers_url: https://yandex.ru/jobs
+    scan_method: websearch
+    scan_query: 'site:yandex.ru/jobs "аналитик" OR "Data Scientist"'
+    enabled: false
+  - name: Avito
+    careers_url: https://career.avito.com
+    scan_method: websearch
+    scan_query: 'site:career.avito.com "аналитик" OR "Data Scientist"'
+    enabled: false
+  - name: VK
+    careers_url: https://team.vk.company/vacancy
+    scan_method: websearch
+    scan_query: 'site:team.vk.company/vacancy "аналитик" OR "Data Scientist"'
+    enabled: false
+  - name: T-Bank
+    careers_url: https://www.tbank.ru/career
+    scan_method: websearch
+    scan_query: 'site:tbank.ru/career "аналитик" OR "Data Scientist"'
+    enabled: false
+  - name: Ozon
+    careers_url: https://job.ozon.ru
+    scan_method: websearch
+    scan_query: 'site:job.ozon.ru "аналитик" OR "Data Scientist"'
+    enabled: false
+  - name: Alfa-Bank
+    careers_url: https://job.alfabank.ru
+    scan_method: websearch
+    scan_query: 'site:job.alfabank.ru "аналитик" OR "Data Scientist"'
+    enabled: false
+
+job_boards:
+  - name: Himalayas
+    provider: himalayas
+    enabled: true
+  - name: Remotive
+    provider: remotive
+    enabled: true
+  - name: We Work Remotely
+    provider: weworkremotely
+    enabled: true
+  - name: RemoteOK
+    provider: remoteok
+    enabled: true
+  - name: Landing.jobs
+    provider: landingjobs
+    enabled: true

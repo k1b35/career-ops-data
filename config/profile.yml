@@ -1,0 +1,101 @@
+# career-ops profile for Konstantin Burmistrov
+# Put this file at: career-ops/config/profile.yml
+# Fields marked  # TODO  need your input before the first real evaluation.
+
+candidate:
+  full_name: "Konstantin Burmistrov"
+  title: "Product Analyst"
+  email: "kostyavvk@gmail.com"
+  phone: "+7 900 634-92-04"      # WhatsApp
+  location: "Tallinn, Estonia"   # city used in English CV headers for foreign roles
+  linkedin: "linkedin.com/in/kburm35"
+  telegram: "https://t.me/konstan35"
+  github: "github.com/k1b35"
+  years_of_experience: 4.3       # per resume: 4 years 4 months (NatureFor, Sber, Garage Eight)
+
+target_roles:
+  primary:
+    - "Product Analyst"
+    - "Senior Product Analyst"
+    - "Product Data Scientist"
+  archetypes:
+    - name: "Product Analyst"
+      level: "Middle+/Senior"
+      fit: "primary"
+    - name: "Product Data Scientist / Product Science"
+      level: "Middle+"
+      fit: "primary"
+    - name: "Data Analyst"
+      level: "Middle+"
+      fit: "secondary"
+    - name: "Data Scientist (antifraud, LTV, RecSys)"
+      level: "Middle"
+      fit: "secondary"
+    - name: "AI Product Manager"
+      level: "Middle"
+      fit: "adjacent"
+
+narrative:
+  headline: "Product Analyst, 4+ years (3 in FinTech): experimentation, causal inference, LTV and uplift models"
+  exit_story: "From growth analytics at an e-commerce startup, through antifraud and product analytics at Sber, to product analytics at an investor social network; now moving toward product data science and AI products (ITMO master's in AI)."
+  superpowers:
+    - "Experimentation: 40 A/B tests, CUPED, DiD, PSM, switchback, uplift modelling"
+    - "Metric trees down to revenue; impact measured in $ and LTV"
+    - "ML for product: CatBoost LTV forecasting, CausalML uplift trees"
+    - "LLM pipelines and AI agents in analytics; mentored 7 junior analysts"
+  proof_points:
+    - name: "Garage Eight: 23 A/B tests on new and churned traders"
+      hero_metric: "CR to active reading +6.5%, deposit activation +5.3% (relative); 187 deposit activations, $84,150 forecast LTV"
+    - name: "Garage Eight: DiD + PSM on the social network's effect"
+      hero_metric: "Weekly trading volume +4% relative, significant contribution to MAU and ARPU; feature raised in the roadmap"
+    - name: "Garage Eight: LTV forecast model (CatBoost) and uplift tree (CausalML)"
+      hero_metric: "Uplift follow-up test CR +3% relative; budgets reallocated by CAC/CR, 1,270 churned users won back, $52,000 LTV"
+    - name: "Sber antifraud analytics"
+      hero_metric: "23,000+ fraudulent accounts and cards blocked; rule tuning prevents losses of RUB 38M per year"
+    - name: "Sber LLM pipeline over 15,000 Banki.ru complaints"
+      hero_metric: "Found biometric false rejections in the Pay by Smile face payment on twins, fixed with the ML team"
+    - name: "Cloud.ru low-code AI-agent builder"
+      hero_metric: "MVP A/B test ARPU +6% relative; feature entered the half-year roadmap and shipped"
+    - name: "NatureFor growth analytics"
+      hero_metric: "Yandex Direct ROI from 120% to 190%; purchase conversion +5%"
+    - name: "GitHub"
+      url: "https://github.com/k1b35"
+      hero_metric: "Product analytics course materials: 47 SQL tasks, 9 notebooks, A/B cases"
+
+compensation:
+  # Gross, full-time, Middle / Middle+ Product Analyst. Ranges are my estimates from
+  # public 2026 data (see salary-benchmarks.md); adjust to your own targets.
+  target_range: "Market rate for Middle/Middle+ Product Analyst in the vacancy's country. Guide (gross/year): Estonia EUR 42-55K; Germany EUR 55-70K; Cyprus EUR 42-58K; UAE USD 60-90K (tax-free); Russia RUB 200-300K/month"
+  currency: "local"              # use the currency of the vacancy's country
+  minimum: "Bottom of the same range: Estonia EUR 42K; Germany EUR 55K; Cyprus EUR 42K; UAE USD 60K; Russia RUB 200K/month"
+  location_flexibility: "Fully remote preferred; open to relocation to EU countries or the UAE. For remote roles at EU companies, expect pay to follow the employer's country band."
+
+location:
+  country: "Estonia"
+  city: "Tallinn"
+  timezone: "Europe/Tallinn"
+  visa_status: "Estonian citizen; EU citizenship, no work permit needed in the EU"
+  authorized_in: ["Estonia", "European Union"]
+  needs_sponsorship: false
+
+language:
+  output: en                     # reports, CVs and cover letters in English
+  # For Russian-market vacancies (hh.ru, Habr Career) switch to:
+  # output: ru
+  # modes_dir: modes/ru
+
+spend_tier: standard
+
+cv:
+  output_format: "html"
+  max_pages: 1                   # one-page CV, as in your current resumes
+  strict_pages: false
+
+cover_letter:
+  notice_period_days: 7
+  primary_domain: "fintech and investor social network"
+
+scan:
+  extractor: mcp
+
+auto_pdf_score_threshold: 4.0
