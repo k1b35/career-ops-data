@@ -36,7 +36,8 @@ Analogs that count as hits: Growth Analyst, Experimentation Analyst, Decision Sc
 - Remote anywhere / EMEA / Cyprus remote → **4.5**
 - US company, remote open to EU residents → **4.0**
 - EU on-site with relocation → **3.5**
-- Hybrid abroad without relocation → **3.0**
+- Asia relocation (hybrid/on-site) with real relocation support → **3.5** (open as of 2026-11-18, same band as EU relocation)
+- Hybrid abroad without relocation / Asia relocation with thin support → **3.0**
 
 ## Hard DQ Criteria — instant FAIL (< 3.0)
 - Remote restricted to a country/region excluding Estonia (US-only, UK-only, etc.)

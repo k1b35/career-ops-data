@@ -92,7 +92,13 @@ permit needed anywhere in the EU. **No US work authorization.**
 2. Fully remote, non-European companies (Cyprus and other jurisdictions).
 3. US companies hiring remotely in the EU (EOR / contractor / EU entity).
 4. European companies with relocation.
-5. **PAUSED (user, 2026-11-18): foreign roles only for now.** Russian companies (Yandex, Avito, VK, T-Bank, Ozon, Alfa-Bank) -- only if they hire someone living in Estonia; verify this explicitly, many require residence in Russia.
+5. **Asia relocation, open as of 2026-11-18.** Companies offering relocation to Asia
+   (e.g. Southeast Asia -- Philippines, Singapore; or Central/South Asia), hybrid or
+   on-site, when the role itself is a strong skills/archetype match and the company
+   provides genuine relocation support (flights, housing help, visas). Treat this as
+   roughly on par with EU relocation (priority 4) when the role fit is strong --
+   it is not a fallback tier, it is a real target now that the candidate is open to it.
+6. **PAUSED (user, 2026-11-18): foreign roles only for now.** Russian companies (Yandex, Avito, VK, T-Bank, Ozon, Alfa-Bank) -- only if they hire someone living in Estonia; verify this explicitly, many require residence in Russia.
 
 **In evaluations (scoring the location dimension):**
 - Fully remote, open to EU/Estonia -> **5.0**
@@ -100,7 +106,9 @@ permit needed anywhere in the EU. **No US work authorization.**
 - Remote "anywhere" / EMEA / Cyprus-based remote -> **4.5**
 - US company, remote explicitly open to EU residents -> **4.0**
 - EU on-site/hybrid with relocation support -> **3.5**
+- Asia relocation (hybrid/on-site) with genuine relocation support (flights, housing, visa help) -> **3.5**, same band as EU relocation -- do not penalize purely for being outside Europe
 - Hybrid outside Estonia without relocation help -> **3.0**
+- Asia relocation with no/thin relocation support -> **3.0**
 - Remote limited to a country/region that excludes Estonia (e.g. "US only", "UK residents only") -> **1.0**, flag as a likely blocker
 - US on-site / requires US work authorization -> **1.0**
 

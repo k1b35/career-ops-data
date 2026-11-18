@@ -61,6 +61,16 @@ location_filter:
     - "Limassol"
     - "Dubai"
     - "UAE"
+    # Asia relocation, opened 2026-11-18 (user is now open to relocating to Asia)
+    - "Asia"
+    - "Southeast Asia"
+    - "APAC"
+    - "Philippines"
+    - "Manila"
+    - "Singapore"
+    - "Kazakhstan"
+    - "Georgia"
+    - "Armenia"
     # - "Russia"  # paused: RU market
     # - "Россия"  # paused: RU market
     # - "Москва"  # paused: RU market
