@@ -30,7 +30,7 @@
      - Cap each batch run at 20 listings unless I say otherwise.
      - If a report scores below 4.0/5, skip the cover letter. -->
 
-(none yet -- add yours above)
+- **Aggregator postings can be evaluated directly, without confirming at the employer first** (user decision, 2026-11-19 -- overrides AGENTS.md "Aggregator Listings -- Confirm at the Employer" for this candidate). When a posting is found only via an aggregator (LinkedIn, BuiltIn, Jobgether, etc.) and the employer's own careers page/ATS can't be found or confirmed quickly, evaluate from the aggregator's JD text anyway instead of stopping. Mark the report header `**Verification:** unconfirmed (aggregator only)` and say so plainly in the Verdict, so the user decides whether to double-check before acting on it. Still check liveness wherever it's cheap (a known ATS API, a quick look at the employer's own site) -- this only removes the hard stop when that isn't quickly possible.
 
 ## Custom Workflows
 
